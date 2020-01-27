@@ -1,0 +1,52 @@
+.Calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weight, .table, .buttons {
+  padding-top: 1rem;
+}
+
+.unit, .weight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border-radius: 0.25rem;
+  margin: 0 0.25rem;
+}
+
+.weight {
+  input {
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+
+  button {
+    width: 2rem;
+  }
+}
+
+table {
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 0.25rem;
+    text-align: center;
+  }
+
+  thead th, tr:nth-child(2n) {
+    background-color: #fafafa;
+  }
+
+  tr:nth-child(n+16) {
+    background-color: #ff7500;
+    color: #ffffff;
+
+    th, td {
+      border-color: #ffd394;
+    }
+  }
+}
