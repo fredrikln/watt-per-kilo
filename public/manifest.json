@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "W/kg calculator",
+  "name": "Watt per kilo calculator",
   "icons": [
     {
       "src": "favicon.ico",

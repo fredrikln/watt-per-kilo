@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './style.scss';
-
 import { useState } from 'react';
+
+import './style.scss';
 
 const POUND = 0.453592; // Pound in kilos
 
@@ -55,13 +55,10 @@ function Calculator() {
   }
 
   let rows = Array.from({ length: maxWpk / 0.5 }, (_, index) => {
-    let classNames = "border border-gray-200 bg-gray-100";
-    if (index % 2 === 0) classNames = "border border-gray-200"
-
     return (
       <tr key={index}>
-        <th className={classNames}>{((index+1) * 0.5).toFixed(1)}</th>
-        <td className={classNames}>{getWatts((index+1) * 0.5)}</td>
+        <th>{((index+1) * 0.5).toFixed(1)}</th>
+        <td>{getWatts((index+1) * 0.5)}</td>
       </tr>
     )
   });
